@@ -4,65 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Pabon</title>
-    <link rel="icon" type="image/png" href="/desarrollo-web-portafolio-a812d2d049ff02d5563d79604597f7cb390a8903/images/logo_small_icon_only_inverted.png">
+    <link rel="icon" type="image/png" href="/images/logo_small_icon_only.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ccs/estilos.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
-                <img src="/desarrollo-web-portafolio-a812d2d049ff02d5563d79604597f7cb390a8903/images/logo_small.png" alt="">
+            <figure class="logo">
+                <img src="/images/logo_small.png" alt="">
             </figure>
         </div>
-        <nav>
+        <nav class="menu">
             <ol>
                 <li>
-                    <a href="">portafolio</a>
+                    <a class="link" href="#portafolio">portafolio</a>
                 </li>
                 <li>
-                    <a href="">Experiencia</a>
+                    <a class="link" href="#evento">Experiencia</a>
                 </li>
                 <li>
-                    <a href="">Trabajemos Juntos</a>
+                    <a class="link" href="#contacto">Trabajemos Juntos</a>
                 </li>
             </ol>
         </nav>
     </header>
 
-    <section>
-        <h1>Hola! Soy <strong>Iván Pabón</strong> desarrollador <strong>WEB</strong><br> apacionado por esta <strong>tecnología</strong></h1>
+    <section class="hero">
+        <h1>Hola! Soy <strong>Iván Pabón</strong> <br> desarrollador <strong>WEB</strong><br> apacionado por esta <strong>tecnología</strong></h1>
         <img src="https://via.placeholder.com/500" alt="" height="300">
     </section>
-    <section>
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3>Tienda ecommerce</h3>
-            <h6>Angular / Firebase</h6>
-            <p><small><strong>Fecha:</strong> 18/11/2020</small></p>
-            <p><small><strong>Puedes verlo en:</strong>https://huesosydelicias.web.app/home </small></p>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur quo quae delectus aliquid aperiam! Nesciunt temporibus pariatur dolores sequi debitis delectus a itaque eos! Ullam hic placeat accusamus doloribus. </p>
-            <img src="/desarrollo-web-portafolio-a812d2d049ff02d5563d79604597f7cb390a8903/images/platzi-video-react-native.png" alt="" width="500">
-        </article>
-    </section>
-    <section>
-        <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="https://via.placeholder.com/500" alt="">
+        <article class="project">
+            <h3 class="project__title">Tienda ecommerce</h3>
+            <h6 class="project__course">Angular / Firebase</h6>
+            <p class="prpject__date"><small><strong>Fecha:</strong> 18/11/2020</small></p>
+            <p class="project__url"><small><strong>Puedes verlo en:</strong>https://huesosydelicias.web.app/home </small></p>
+            <p class="project__description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur quo quae delectus aliquid aperiam! Nesciunt temporibus pariatur dolores sequi debitis delectus a itaque eos! Ullam hic placeat accusamus doloribus. </p>
+            <figure class="project__imageContainer">
+                <img class="project__image" src="/images/platzi-video-react-native.png" alt="" width="500">
             </figure>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus error nulla aliquid eos est ipsum in unde quas nam odio dolores, cumque expedita consequuntur sit nobis. Tempore laudantium ab quidem!</p>
-            <a href="">Ver Video</a>
         </article>
     </section>
-    <section>
-        <form action="">
+    <section id="evento">
+        <h2>Más sobre mi experiencia</h2>
+        <article class="event">
+            <figure class="event__imageContainer">
+                <img class="event__image" src="https://via.placeholder.com/500" alt="">
+            </figure>
+            <h3 class="event__title">Title</h3>
+            <p class="event__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus error nulla aliquid eos est ipsum in unde quas nam odio dolores, cumque expedita consequuntur sit nobis. Tempore laudantium ab quidem!</p>
+            <a class="event__url" href="" target="_blank">Ver Video</a>
+        </article>
+    </section>
+    <section id="contacto" class="contact">
+        <form action="" class="form__email">
             <label for="email">Contactame</label>
             <input type="email" placeholder="Ingesa tu email" id="email" required>
             <button>Enviar</button>
         </form>
     </section>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 </body>
