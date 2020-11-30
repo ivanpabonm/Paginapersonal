@@ -1,0 +1,247 @@
+Dom document objet model
+modelo del documento que se carga en el navegador web
+que se carga como un arbol de nodos
+comentario dentro de html <!-- -->
+
+https://allthetags.com/
+https://www.w3schools.com/
+https://developer.mozilla.org/es/docs/Learn
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+https://colorhunt.co/palettes
+https://coolors.co/palettes/trending
+https://color.adobe.com/es/create/color-wheel
+https://www.eniun.com/herramientas-utiles-test-verificacion-css/
+https://flexbox.help/
+
+etiqueta - contenido - cierre de la etiqueta
+<p>esto es un parrafo</p>
+
+etiquetas - atributos
+<img src=" ruta de la imagen">
+<img src="https://via.placeholder.com/500" alt="">
+
+
+Navegacion entre secciones
+a la etiqueta principal se le asigna un id="nombre"
+y a la etiqueta <a> se le hace la referecia con # identifica que
+el enlace es interno
+
+<a href="#contacto">contactanos</a>
+
+<section id="contacto">
+</section>
+
+- ¿Cómo podemos evitar que cuando un usuario le dé clic a un enlace
+externo se salga de nuestro sitio web? o Agregándole a la etiqueta
+ a el atributo tarjet y escribiendo en su valor _blank
+o Ejemplo:
+
+<a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank"> Ver Plática</a>
+
+Estilos
+Existen 3 formas de agregar estilos a nuestro sitio:
+
+Estilo en línea (Inline):
+Utiliza el atributo style.
+No es para nada recomendado ya que Html sirve para definir la
+estructura y semántica del código y no el aspecto visual, aquí esta
+ríamos mezclando todo.
+
+Estilo interno (Internal):
+Utiliza una etiqueta style.
+Separa en cierto modo, de una forma menos sucia (por decirlo así). 
+Esta forma sigue sin ser la más recomendada porque seguimos 
+mezclando lo que es el aspecto visual con la estructura y semántica del código.
+
+Estilo externo (External):
+Utilizando un archivo CSS externo al documento HTML.
+Esta es la forma más recomendada porque estamos separando totalmente
+ la estructura y semántica con el aspecto visual.
+
+
+CSS
+ESTRUCTURA CSS
+
+reglas: conformada de selectores - declaraciones - propiedades - valores
+
+selectores: fEs la forma que usamos en CSS para apuntar hacia uno o varios elementos de HTML. Existen varios tipos de selectores.
+
+declaraciones: o Es todo el conjunto de propiedades y valores que se encuentran dentro de las llaves del bloque de código de CSS
+
+propiedades:Son todas las diferentes formas que podemos usar para estilizar los elementos. Su funcionamiento está ligado a los valores
+
+valores: Son los valores que una propiedad puede tener.
+
+tipo de selectores: 
+etiquetas (header, nav, h1)
+descendenter (body header div nav ol li a)
+id (#Portafolio)
+clase(.Portafolio)
+
+Recordar:
+Los id deben son únicos, es decir, no se pueden repetir.
+Las clases si se pueden repetir.
+
+<p> {
+  color: red;
+}
+
+METODOLOGIA BEM (BLOQUE - ELEMENTO - MODIFICADOR)
+Se usa para nombrar clases
+
+ESTILOS Y CSS
+UNIDADES DE MEDIDA Y COLORES
+Representar color de tres formas
+Palabra clave: nombre del color
+hexademicimales: rgb() rgba() Tiene 16 elementos
+01233456789ABCDEF VALOR MINIMO 0 VALOR MAXIMO F
+#FFFFFF => BLANCO 
+#000000 => NEFRO
+GRUPOS RGB RED GREEN BLUE
+#FF0000 => ROJO
+#00FF00 => VERDE
+#0000FF => AZUL
+hls() hlsa()
+UNIDADES DE MEDIDA
+PIXEL => MENOR UNIDAD DE COLOR
+REM
+EM
+
+FUENTES
+propiedad = font family: tipo de letra;
+https://fonts.google.com/
+
+line-height para modificar el alto de linea
+font-size para modificar el tamaño de la fuente
+font-weight para modificar el tipo de fuente
+font-style para modificar el estilo de la fuente
+letter-spacing para modificar el espacio entre letras
+text-transform para transformar la fuente (mayusculas, minuculas, etc)
+text-decoration para moodificar la decoración de la fuente
+
+Background de color e imagen
+background-color para agregar unn color de fondo
+color para agregar un color al texto
+text-decoration para modificar la decoración del texto
+background-image para agregar una imagen de fondo
+background-size para modificar el tamaño del background asignado
+background-repeat para modificar la repetición del backgound asignado
+background-position para modificar la posición del bakground asignado
+
+BORDES
+border-top borde superior
+border-right borde derecho
+border-left borde izquierdo
+border-buttom borde inferior
+border borde en todas las posiciones
+border-radius: redondea los bordes
+.selector{
+ border: tamaño tipo estilo;
+}
+
+MARGENES
+Especio que hay entre elementos
+h1{
+ margin: 5px 10px 15px 20px; 5 arriba - 10 derecha - 15 abajo -20 izquierd
+}
+h1{
+ margin: 5px 10px 15px; 5 arriba- 10 derecha e izquierda - 15 abajo	
+}
+h1{
+ margin: 5px 10px; 5 arriba y abajo- 10 derecha e izquierda
+}
+
+
+MODELO DE CAJA
+El modelo de caja es un concepto teórico de css que representa a 
+cada elemento html en base sus propiedades de: margin, border, 
+padding y dimensiones (alto y ancho).
+
+El tamaño del elemento es la sumatoria del elemento mas el 
+padding mas el border mas el margin
+
+height: 500px
+pading: 20px
+border: 1 px
+margin 10px
+wehith: 500
+
+ancho del elemeto = 542  ancho + padding + border
+alto =542 alto + padding + borde
+
+box-sizing: borderbox la caja siempre ocupa el tamaño hasta su borde
+no se pasa del ancho y alto definido
+
+display-flex
+justify-content: center centra contenido horizontal
+align-items: center centra contenido vertical
+
+display: flex:
+flex:direction column           horizontal
+flex:direction column           vertical
+Flexbox
+
+Display flex
+
+El elemento padre que con propiedad display flex posee también la 
+propiedades:
+
+flex-direction: Dirección de la disposición de los elementos
+o row (default)
+o column
+flex-wrap: Controla si el contenedor flex es de una línea o 
+multi línea o nowrap (default)o wrap Los elementos hijos de un padre
+con propiedad display flex tienen a su disposición una nueva 
+propiedad que aporta mayor flexibilidad a su comportamiento:
+
+flex-shrink: Capacidad de encogimiento del elemento.
+o Valor entre 0 y 1: de 0% encogible a 100% encogible
+
+justify-content, la cual alinea elementos horizontalmente y acepta los siguientes valores
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+
+align-itemsEsta propiedad CSS alinea elementos verticalmente y acepta los siguientes valores:
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.
+
+flex-direction. Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba.
+
+flex-wrap,
+nowrap: Cada elemento se ajusta en una sola línea.
+wrap: los elementos se envuelven alrededor de líneas adicionales.
+wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+
+align-content para establecer como múltiples líneas están separadas una de otra. Esta propiedad acepta los siguientes valores:
+
+flex-start: Las líneas se posicionan en la parte superior del contenedor.
+flex-end: Las líneas se posicionan en la parte inferior del contenedor.
+center: Las líneas se posicionan en el centro (verticalmente hablando) del contenedor.
+space-between: Las líneas se muestran con la misma distancia entre ellas.
+space-around: Las líneas se muestran con la misma separación alrededor de ellas.
+stretch: Las líneas se estiran para ajustarse al contenedor.
+Esto puede ser confuso, pero align-content determina el espacio 
+entre las líneas, mientras que align-items determina como los 
+elementos en su conjunto están alineados dentro del contenedor. 
+Cuando hay solo una línea, align-content no tiene efecto.
+
+Alineación de elementos
+Alinear de manera horizontal - justify-content
+Alinear de manera vertical align-items
+IMPORTANTE: Cuando la propiedad flex-direction se ha definido 
+como column, la propiedad justify-content ya no va a aplicar sobre 
+la alineación horizontal, sino sobre la vertical. Y align-items ya 
+no aplicaría sobre la alineación vertical sino la horizontal. 
+Se intercambian sus efecto
+
+ 
