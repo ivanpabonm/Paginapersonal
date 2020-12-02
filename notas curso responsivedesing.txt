@@ -1,0 +1,72 @@
+curso de responsive desing
+
+que es? son todas esas tecnicas que usamos para adaptar aplicaciones
+web a la mayor cantidad de pantallas
+
+Patrones en Reponsive Design:
+
+Mostly Fluid
+Colocación de columnas
+Layout shifter
+Tiny tweaks
+Off canvas
+Para mas información: https://mediaqueri.es
+
+Conceptos nuevos:
+
+Viewport: área visible del navegador
+Portrait: vertical
+Landscape: horizontal
+Mobile first: empezar un websit desde la menor resolución soportada
+Deskto first: empezar un websit desde la mayor resolución soportada
+¿Cúal es mejor?: Técnicamente Mobile First
+
+Resolución minima de responsive 320px
+width=device-width para que se adapte según la pantalla del dispositivo
+initial-scale=1.0 para indicar el escalado según el dispositivo
+
+Unidades relativas de medida:
+
+Porcentaje: longitud referente al tamaño de los elementos padre
+em: unidad relativa al tamaño de fuente especificada más cercano
+rem: unidad relativa al tamaño de fuente especificada en el ancestro más lejano (html o body)
+vw / vh: unidad relativa porcentual con respecto al viewport
+
+MEDIA QUERIES
+max-width = hasta
+min-width = desde
+
+Estructura del Media Querie:
+
+@media media type and (condición) { }
+
+Mobile Firts
+@media screen and (max-width: 320px) { }
+@media screen and (max-width: 480px) { }
+@media screen and (max-width: 768px) { }
+@media screen and (max-width: 1024px) { }
+
+Desktop Firts
+@media screen and (min-width: 1024px) { }
+@media screen and (min-width: 768px) { }
+@media screen and (min-width: 480px) { }
+@media screen and (min-width: 320px) { }
+
+/* Media Queries Desktop first */
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 480px){
+    
+}
+@media screen and (max-width: 320px){
+    
+}
+
+DISPLAY: FLEX;
+FLEX-WRAP: WRAP;(DOS ELEMENTOS QUE ESTEN EN EL MISMO CONTENDOR
+AL HACER LA PANTALLA MAS PEQUEÑA CAE UNO SOBRE EL OTRO)

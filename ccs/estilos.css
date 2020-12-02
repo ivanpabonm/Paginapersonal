@@ -22,7 +22,6 @@ h1{
     /* text-decoration: underline; */
     color: white;
     margin: 0px;
-    font-size: 3vw;
     margin-left: 10px;
 }
 h1 strong{
@@ -42,7 +41,8 @@ ol, ul{
     list-style: none;
 }
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -54,6 +54,7 @@ ol, ul{
     background-color: #294051;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 70px;
@@ -84,6 +85,7 @@ ol, ul{
     background-repeat: no-repeat;
     background-position-x: right; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -104,6 +106,7 @@ ol, ul{
     padding: 20px;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -130,17 +133,7 @@ ol, ul{
 .project-imageContainer{
     width: 500px;
 }
-.footer{
-    color: white;
-    background-color: #1b2127;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    font-family:alegreya-light;
-    font-size:13px;
-    /* color:silver; */
-}
+
 .event-lis-title{
     margin: 20px;
 }
@@ -188,6 +181,7 @@ ol, ul{
     color: white;
     height: 150px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;   
 }
@@ -212,6 +206,18 @@ ol, ul{
 }
 .social-link.instagram {
     background-image: url("/images/instagram.svg");
+}
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-family:alegreya-light;
+    font-size:13px;
+    /* color:silver; */
 }
 .form-email input{
     border-color: gray;
@@ -240,4 +246,35 @@ ol, ul{
 .footer a{
     color: white;
     text-decoration: none;
+}
+
+/* Media Queries Desktop first */
+
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: initial;
+    }
+    .header ol, li{
+        height: 50px;
+        text-align: center;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    
+}
+@media screen and (max-width: 320px){
+    
 }
