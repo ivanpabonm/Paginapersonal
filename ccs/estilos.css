@@ -106,7 +106,7 @@ ol, ul{
     padding: 20px;
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
 }
@@ -124,14 +124,17 @@ ol, ul{
     margin-bottom: 10px;
 }
 .project-details{
-    width: 500px;
+    width: 50%;
     display: inline-block;
 }
 .project strong{
     font-family: 'Fjalla One', sans-serif;
 }
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .event-lis-title{
@@ -271,9 +274,41 @@ ol, ul{
     .header .logo{
         text-align: center;
     }
+    .project{
+        display: block;
+    }
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        /* font-size: auto; */
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: 1.2em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: 1em;
+    }
+    .project-course, .project-date, .project-url{
+        margin: .4em 0;
+    }
 }
 @media screen and (max-width: 480px){
-    
+    .project-details{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 320px){
     
