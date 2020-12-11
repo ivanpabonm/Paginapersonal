@@ -70,3 +70,47 @@ Desktop Firts
 DISPLAY: FLEX;
 FLEX-WRAP: WRAP;(DOS ELEMENTOS QUE ESTEN EN EL MISMO CONTENDOR
 AL HACER LA PANTALLA MAS PEQUEÑA CAE UNO SOBRE EL OTRO)
+
+Pasos para hacer imagenes responsive:
+I. En los estilos generales
+a. Declarar el width de la imagen y el max-width: 100%;
+b. Declarar el width del contenedor de la imagen en medidas relativas
+
+II. En la Query
+a. Declarar el width: auto en el contenedor de la imagen.
+
+Pasos para hacer textos responsive:
+I. En la Query
+a. Declarar un font-size en px al elemento que contiene todos los 
+textos, el cual servirá como guía para el em
+b. Declarar los em para cada texto en la primera query
+
+NOTA
+a. Al darse la necesidad de redimensionar los tamaños del texto en 
+otra query (o la proxima) el único valor que se deberá cambiar 
+para que todos los textos configurados relativamente se adapten 
+automaticamente es el font-size del contenedor previamente declarado
+en pixeles.; 0314823282
+
+revisar logs de los sistemas
+
+En todos sus proyectos, siempre al inicio formateen sus imágenes
+.img{
+max-width: 100%;
+}
+
+Les ahorrará mucho tiempo y les hará más fácil todo
+
+
+CSS Positions
+
+static: es la propiedad por defecto.
+Con las otras opciones, se activan las propiedades de top, bottom, left, right y z-index.
+
+relative: el objeto se mueve en base al lugar donde se encuentra originalmente.
+absolute: el objeto se ubica de manera absoluta con el elemento más cercano que tenga posición relativa o con el body.
+fixed: El elemento se muestra de manera fija en el viewport.
+sticky: El elemento se queda de manera fija una vez que aparece en pantalla.
+
+width: 100vw 100 ancho
+heigth: 100vh 100% alto
